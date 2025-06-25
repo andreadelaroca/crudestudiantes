@@ -12,7 +12,7 @@ def main():
         opcion = input("Digite una opción: ")
         if opcion == "1":
             usuario = input("Usuario: ")
-            clave = input("Contraseña:")
+            clave = input("Contraseña: ")
             o.agregar_usuario(usuario, clave)
             print("Usuario agregado exitosamente.\n")
         elif opcion == "2":
