@@ -11,13 +11,19 @@ def main():
         menu()
         opcion = input("Digite una opción: ")
         if opcion == "1":
-            o.agregar_usuario()
+            usuario = input("Usuario: ")
+            clave = input("Contraseña:")
+            o.agregar_usuario(usuario, clave)
+            print("Usuario agregado exitosamente.\n")
         elif opcion == "2":
             if o.inicio():
                 print("Bienvenido al sistema.")
             else:
                 print("Error en el inicio de sesión.")
                 print("Si su usuario no está registrado, selecciona la opción 1 para registrarse.")
-        else:
+        elif opcion == "3":
             print("Saliendo del sistema...")
             break
+        else:
+            print("Opción no válida. Intente de nuevo.\n")     
+    main()
